@@ -40,8 +40,8 @@ def main():
 
     w, h = image.size
     # масштаб уменьшения
-    temp_scale = 5
-    palette = '@%#*+=-:.'
+    temp_scale = 10
+    palette = '@&%#*+=-:.'
     sp = []
     for x in range(w):
         for y in range(h):
