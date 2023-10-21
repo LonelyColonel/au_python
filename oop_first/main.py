@@ -14,8 +14,8 @@ class RegularPolygon:
 
 
 class Quadrilateral(RegularPolygon):
-    def __init__(self, n, a, b):
-        super().__init__(n)
+    def __init__(self, a, b, n=4):
+        self.n = n
         self.a = a
         self.b = b
 
@@ -30,8 +30,8 @@ class Quadrilateral(RegularPolygon):
 
 
 class Square(Quadrilateral):
-    def __init__(self, n, a, b, side):
-        super().__init__(n, a, b)
+    def __init__(self, side, n=4):
+        self.n = n
         self.side = side
 
     def get_perimeter(self):
@@ -45,8 +45,8 @@ class Square(Quadrilateral):
 
 
 class Triangle(RegularPolygon):
-    def __init__(self, n, a, b, c):
-        super().__init__(n)
+    def __init__(self, a, b, c, n=3):
+        self.n = n
         self.a = a
         self.b = b
         self.c = c
